@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> react js setup </title>
+</head>
+<body>
+sab sa phla node js ka version check karna ka lia command prompt ma jai ga or node --version lhka ga
+16.13.1
+next npm --version
+8.1.2
+npx -v bhii lkh skta ha ya npx --version bii lkh skta h 
+
+next step vs code ma jai ga terminal ma ja kar cd 01basicreact lkha ga or phir ham dir lkha or last ma npm run dev lkha ga 
+jsx full javascript syntax extantion 
+new project banana ka lia npm create vite@latest lkha ga
+src par jai ga or app.jsx par ja kar <> </>fragment is ko blank parent elemnet khta ha is ka andar ham hamara code lkh rha ho ga
+
+next step install prettier -code formatter and next es7 react/redux for easily run code is sa shorcuts mil ska ga sari cheeza khud sa nhi lkhni para gi is ka baad tailwind css ko install kara ga
+  tailwind css installation tarika:
+  phla tailwind css web par jai ga phir npm install tailwindcss @tailwindcss/vite is ko lkha ga then configure ma ja kar 2 line ma y alkha ga import tailwindcss from '@tailwindcss/vite' and then configure ma ja kar 7 line ma  react ka andar (), lga kar y lkha ga react(),ka sath tailwindcss(),and then css file ma ja kar ya lkha ga @import "tailwindcss"; app.jsx ma ya line 1 ma ajai to error show ho ga import logo from './logo.svg'; is lia is ko hata da us ka baad simple react snippets download kara ga is code full mil jai example ma navbar.js file ma cc lkho ga mean class component to full code da da ga  
+
+  <br><br><br>
+  main.jsx use for Yeh entry point (start point) hota hai
+Yahan sirf React ko DOM se connect kiya jata hai
+
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App.jsx";
+
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <App />
+);
+<br><br><br>
+app.jsx use for Yeh main component hota hai
+Yahan tum apni actual app ka UI likhte ho
+
+function App() {
+  return (
+    <h1>Hello React</h1>
+  );
+}
+
+export default App;
+<br><br>
+createroot ka kaam ha react ko batana ka tmra app  html ka kis contatiner ka andar  ha or 
+createRoot() React ka ek important function hai jo React app ko browser ke DOM me mount (start) karne ke liye use hota hai.
+<br><br>
+render() (ReactDOM wala)
+
+👉 Yeh function React app ko screen par dikhata hai
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<App />);
+🧠 Samajh:
+createRoot() → jaga banata hai
+render() → content show karta hai
+📘 2. render() method (Class Component me)
+
+👉 Jab tum class component use karte ho to render() method zaroori hota hai
+
+import React from "react";
+
+class App extends React.Component {
+  render() {
+    return <h1>Hello World</h1>;
+  }
+}
+🧠 Samajh:
+render() → batata hai screen par kya dikhana hai
+<>
+  </> // fargmenent
+  Stack(premitive) and heap(non premiive hota h) ma differ jab bhii stack memory milti ha to copy hoti ha or jb koi memory heap ka nadar define hoti  ha to reference milti ha
+</body>
+
+</html>
