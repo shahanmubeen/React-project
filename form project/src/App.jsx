@@ -19,7 +19,7 @@ function App() {
 
   return (
     <div>
-      <h2>Contact Us</h2>
+      <h2 className="bg-red-700">Contact Us</h2>
 
       <form onSubmit={handleSubmit}>
         {/* First Name */}
@@ -54,6 +54,16 @@ function App() {
 
         {/* Query Type */}
         <h3>Query Type</h3>
+
+        <label>
+          <input
+            type="radio"
+            name="query"
+            value="General Enquiry"
+            onChange={(e) => setQueryType(e.target.value)}
+          />
+          General Enquiry
+        </label>
 
         <label>
           <input
